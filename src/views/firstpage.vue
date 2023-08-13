@@ -27,6 +27,7 @@ const all = reactive({
     religion: inputStore.religion,
     body_status: inputStore.body_status,
     left_handed: inputStore.left_handed,
+    Nationality:inputStore.Nationality,
 })
 
 
@@ -59,7 +60,9 @@ const next = () => {
         inputStore.setInputValue("religion", all.religion);
         inputStore.setInputValue("body_status", all.body_status);
         inputStore.setInputValue("left_handed", all.left_handed);
+        inputStore.setInputValue("Nationality", all.Nationality);
 
+        
         router.push('/secondpage')
     }
     else {
@@ -183,7 +186,7 @@ const error_8 = ref(false)
 function onInput_8(e:any) {
   const value = e.target.value
 
-  if ( all.postal_code.length < 9 || all.postal_code.length > 9 || isNaN(value)) {
+  if ( all.postal_code.length < 10 || all.postal_code.length > 10 || isNaN(value)) {
     error_8.value = true
 
   } else {
@@ -198,8 +201,10 @@ function onInput_8(e:any) {
 
 <template>
     
-    <main style="padding-bottom: 73px;">
-        
+    <main style="">
+        <br>
+        <br>
+        <br>
 
         <div class="container"
             style=" font-family: B Homa; text-align: right; background-color: rgba(255, 255, 255, 0.76); padding: 30px; border-radius: 20px; backdrop-filter: blur(10px);"
@@ -240,7 +245,6 @@ function onInput_8(e:any) {
                             <option>صنایع چوب و مبلمان</option>
                             <option>تربیت بدنی</option>
                             <option>ساختمان</option>
-                            <option>صنایع شیمیایی</option>
                         </select>
                     </div>
                 </div>
@@ -341,13 +345,13 @@ function onInput_8(e:any) {
                 </div>
                 <div class="col-md-5">
                     <div class="form-group">
-                        <label>شهرستان</label>
+                        <label>محل تولد(شهرستان)</label>
                         <input type="text" class="form-control" v-model="all.country" name="country">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label>شهر/روستا</label>
+                        <label>محل تولد(شهر/روستا)</label>
                         <input type="text" class="form-control" name="city" v-model="all.city">
                     </div>
                 </div>

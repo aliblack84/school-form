@@ -419,7 +419,9 @@ function onInput_14() {
 }
 </script>
 <template>
-    <main style="padding-bottom: 74px;">
+    <main style="padding-bottom: ;">
+        <br>
+        <br>
     <div class="container"
         style=" font-family: B Homa; text-align: right; background-color: rgba(255, 255, 255, 0.76); padding: 30px; border-radius: 20px; backdrop-filter: blur(10px);"
         dir="rtl">

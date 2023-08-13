@@ -76,6 +76,17 @@ export const useInputStore = defineStore("input", {
     imam_relief: '',
     father_education_ministry: '',
     mother_education_ministry: '',
+    supervisor_name:'',
+    supervisor_national_code:'',
+    supervisor_id:'',
+    supervisor_education:'',
+    supervisor_occupation:'',
+    supervisor_work_address:'',
+    supervisor_insurance_code:'',
+    supervisor_work_phone:'',
+    supervisor_issue_place:'',
+    Nationality:'ایرانی'
+
   }),
   actions: {
     setInputValue(inputName, value) {
@@ -156,6 +167,17 @@ export const useInputStore = defineStore("input", {
         imam_relief: this['imam_relief'],
         father_education_ministry: this['father_education_ministry'],
         mother_education_ministry: this['mother_education_ministry'],
+        supervisor_name:this['supervisor_name'],
+        supervisor_national_code:this['supervisor_national_code'],
+        supervisor_id:this['supervisor_id'],
+        supervisor_education:this['supervisor_education'],
+        supervisor_occupation:this['supervisor_occupation'],
+        supervisor_work_address:this['supervisor_work_address'],
+        supervisor_insurance_code:this['supervisor_insurance_code'],
+        supervisor_work_phone:this['supervisor_work_phone'],
+        supervisor_issue_place:this['supervisor_issue_place'],
+        
+        Nationality:this['Nationality']
       }
     }
   },
